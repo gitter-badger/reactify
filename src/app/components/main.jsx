@@ -1,6 +1,6 @@
 
 let React = require('react'),
-    { AppBar, Styles, IconButton } = require('material-ui'),
+    { AppBar, Styles, IconButton, NavigationClose } = require('material-ui'),
     ThemeManager = Styles.ThemeManager();
 
 module.exports = React.createClass({
@@ -22,11 +22,6 @@ module.exports = React.createClass({
                 <AppBar
                     title="Title"
                     iconClassNameRight="muidocs-icon-navigation-expand-more" />
-
-                <AppBar
-                    title="Title"
-                    iconElementLeft={<IconButton><NavigationClose /></IconButton>}
-                    iconElementRight={<FlatButton label="Save" />} />
             </div>
 
         );
